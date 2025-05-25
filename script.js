@@ -34,13 +34,13 @@ nomeCompleto = nome + " " + sobrenome;
 alert(nomeCompleto);
 */
 
-//const batata = "batata";
+//const myStr = "myStr";
  
-//batata = "batatinha"
+//myStr = "mensagem"
 
 //retorna erro acima, tentando mudar valor de uma const
 
-//alert(batata);
+//alert(myStr);
 
 /* Operadores no JavaScript:
 
@@ -51,13 +51,31 @@ sinais: + - * / = ++ -- -= && || etc...
 1) Operadores aritiméticos:
 */
 
-let val1, val2, total;
+// let val1, val2, total;
 
-val1 = 3;
+/*val1 = 3;
 val2 = 6;
 total = val1 + val2;
 
 alert(total);
+*/
 
+//Quando se usa + com strings ocorre concatenação.
+/*valor1 = "Dimitri ";
+valor2 = "Santos";
 
+mensagem = valor1 + valor2;
+alert(mensagem);
+*/
 
+// operadores lógicos 
+
+/*let valor1, valor2;
+
+valor1 = 10;
+valor2= 17;
+//não são iguais, resultado false.
+alert(valor1 == valor2)
+*/
+
+alert(1>=1);
