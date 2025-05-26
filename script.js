@@ -68,7 +68,7 @@ mensagem = valor1 + valor2;
 alert(mensagem);
 */
 
-// operadores lógicos 
+// operadores comparação
 
 /*let valor1, valor2;
 
@@ -78,4 +78,99 @@ valor2= 17;
 alert(valor1 == valor2)
 */
 
-alert(1>=1);
+//alert(1>=1);
+
+/*let val1, val2, val3;
+val1 = 2;
+val2 = "2";
+val3 = 6;
+
+total = (val1 == val2);
+alert(total);
+
+total = (val1 === val2);
+console.log(total)
+*/
+
+/*let val1, val2, val3;
+val1 = 8;
+val2 = 18;
+let idade = 17;
+*/
+/*eleitor = (idade<18) ? "Não eleitor": "Eleitor";
+alert(eleitor);
+
+total = (val1 === val2);
+console.log(eleitor)
+
+//Operador && (e)
+eleitor = (idade >=18 && idade < 65) ? "idade = " +idade+ " eleitor" :"idade = " + idade + " Não eleitor";
+console.log(eleitor)
+//Operador || (ou)
+eleitor = (idade >=16 || idade >=18) ? "idade = "+ idade +" eleitor" :"idade = " + idade + " Não eleitor";
+console.log(eleitor)
+//Operador ! (não)
+eleitor = !(idade >=18) ? "idade =" + idade +" Não eleitor" :"idade = " + idade + " Eleitor";
+console.log(eleitor)*/
+
+//Funções:
+//Função pra soma:
+/*function soma(val1,val2){
+        return val1 + val2;
+}
+
+//Função pra subtração:
+function subtracao(val1,val2){
+    return val1 - val2;
+}
+
+function multiplicacao(val1, val2){
+    return val1 * val2;
+}
+
+document.getElementById("texto").innerHTML = soma(10,20);
+*/
+
+/*Conceito de objetos
+
+Objetos são basicamente variáveis com muitos valores dentro.
+
+Ex: const carro = {marca:"ford", modelo:"ka", ano:2014}
+
+Os valores dentro de um objeto são chamados de propriedades.
+
+Objetos também podem ter métodos. Um método é uma função ccolocadas dentro de uma propriedade.
+*/ 
+
+/*const carro = {
+    marca: "ford",
+    modelo: "fusion",
+    ano: 2020,
+    placa:"ABC-1234",
+    buzina: function () { alert("bibiii") },
+    completo: function() {
+        return "A marca é "+this.marca+" e o modelo é "+this.modelo+".";
+    }
+};
+
+console.log(carro.completo());
+carro.buzina();
+*/
+
+/* Eventos
+
+Eventos são ações disparadas pela interação dos usuários na página.
+é o correto manejo desses eventos que tornam as páginas interaticas e dinnâmicas.
+
+exemplos:
+onclick -> Disparado quando clique duplo.
+onmouseover -> Disparado quando mouse está sobre elemento.
+onmousemove -> Disparado quando o mouse é movido no elemento.*/
+
+/*function eventoClick(){
+    alert("Evento ativado.");
+}*/
+
+function eventoClick(){
+    document.body.style.backgroundColor = "yellow";
+}
