@@ -174,3 +174,22 @@ onmousemove -> Disparado quando o mouse é movido no elemento.*/
 function eventoClick(){
     document.body.style.backgroundColor = "yellow";
 }
+
+function eventoOver(){
+    document.body.style.backgroundColor = "blue";
+
+}
+
+
+
+//Arrays, são listas, que contém vários itens, ex:
+
+const lista = ["arroz","feijão", "macarrão", "leite"]; //array
+lista[3] = "acarajé";
+let x = lista[3];
+alert(x);
+
+const pessoa = {nome:"Jeferson", sobrenome:"Saturnino", idade:30}; //objeto
+console.log(pessoa.nome);
+console.log(lista[2]);
+
