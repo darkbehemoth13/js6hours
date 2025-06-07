@@ -3,7 +3,7 @@ let a,b,c;
 //Atribuição de valores
 a=1;
 b=10;
-c=a+b;
+c=`${a+b-a-a} Teste string atual`;
 
 
 
@@ -180,6 +180,10 @@ function eventoOver(){
 
 }
 
+function eventOut(){
+    document.body.style.backgroundColor = "rgb(23, 21, 21)";
+}
+ 
 
 
 //Arrays, são listas, que contém vários itens, ex:
@@ -187,9 +191,48 @@ function eventoOver(){
 const lista = ["arroz","feijão", "macarrão", "leite"]; //array
 lista[3] = "acarajé";
 let x = lista[3];
-alert(x);
+console.log(x);
 
 const pessoa = {nome:"Jeferson", sobrenome:"Saturnino", idade:30}; //objeto
 console.log(pessoa.nome);
 console.log(lista[2]);
 
+
+///////////////////////////////////
+  // Quantidade de flocos que vai criar
+  const quantidadeFlocos = 70;
+
+  function criarFloco() {
+    const floco = document.createElement('div');
+    floco.classList.add('floco');
+
+//miolera véia
+    const miolo = document.createElement('div');
+    miolo.classList.add('miolo');
+
+    floco.appendChild(miolo);
+
+    // Posição horizontal aleatória em vw
+    floco.style.left = `${Math.random() * 100}vw`;
+
+    //Escala miolo
+    const escala = Math.random() * 0.9 + 0.3;
+    miolo.style.transform = `scale(${escala})`;
+
+    // Tempo da animação (5 a 12 segundos)
+    floco.style.animationDuration = "7s";
+    floco.style.animationIterationCount = "infinite";
+
+    // Delay aleatório para espalhar os flocos
+    floco.style.animationDelay = `${Math.random() * 12}s`;
+
+    document.body.appendChild(floco);
+  }
+
+  function iniciarNeve(qtd) {
+    for (let i = 0; i < qtd; i++) {
+      criarFloco();
+    }
+  }
+
+  iniciarNeve(quantidadeFlocos);
